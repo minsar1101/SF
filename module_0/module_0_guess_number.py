@@ -18,10 +18,10 @@ def game_core_v3(number, left_boundary, right_boundary):
 
     while predict != number:
         if predict < number:
-            left_boundary = predict+1
+            left_boundary = predict + 1
         elif predict > number:
-            right_boundary = predict-1
-        # выбираем промежуток, в который попадает загаданное число
+            right_boundary = predict - 1
+        # выбираем промежуток, в который попадает загаданное число.
         predict = left_boundary + int((right_boundary - left_boundary)/2)
         count += 1
     return(count)
